@@ -34,7 +34,7 @@ class GlobalController extends AbstractController
         if($form->isSubmitted() && $form->isValid()){
             $passwordCrypte = $encoder->encodePassword($utilisateur, $utilisateur->getPassword());
             $utilisateur->setPassword($passwordCrypte);
-            $utilisateur->setRoles("ROLE_USER");
+            $utilisateur->setRoles("ROLE_ADMIN");
             $om->persist($utilisateur);
             $om->flush();
             return $this->redirectToRoute("accueil");

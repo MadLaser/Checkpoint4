@@ -65,7 +65,7 @@ class __TwigTemplate_c6c9441025ceb2693470681845fc7030f9bb677869f371f2b5075d62960
   <a class=\"navbar-brand\" href=";
         // line 12
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
-        echo ">KECHIDA-Concession-Auto</a>
+        echo ">Concessionnaire-Auto</a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
@@ -282,7 +282,7 @@ class __TwigTemplate_c6c9441025ceb2693470681845fc7030f9bb677869f371f2b5075d62960
     </head>
     <body>
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
-  <a class=\"navbar-brand\" href={{ path('accueil')}}>KECHIDA-Concession-Auto</a>
+  <a class=\"navbar-brand\" href={{ path('accueil')}}>Concessionnaire-Auto</a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>

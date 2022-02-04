@@ -72,11 +72,13 @@ class Utilisateur implements UserInterface
     public function getRoles()
     {
         return [$this->roles];
+        $roles[] = 'ROLE_ADMIN';
     }
 
     public function setRoles(string $roles): self
     {
         $this->roles = $roles;
+
 
         return $this;
     }
@@ -93,7 +95,8 @@ class Utilisateur implements UserInterface
     }
     public function eraseCredentials()
     {
-        
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
     }
     public function getSalt()
     {
